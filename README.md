@@ -1,5 +1,5 @@
 # Ressu programming club's website
-Welcome to the Ressu programming club's website.!
+Welcome to the Ressu programming club's website!
 
 ![Logo](/images/x.jpg "logo")
 
