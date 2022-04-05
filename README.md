@@ -7,7 +7,8 @@ Welcome to the Ressu programming club's website.!
 
 ## About the project
 
-This website was created to host all concecutive projects for 
+This website is a homepage of the Ressu's coding club. Learn about us, check our prjocets and maybe even join us!
+
 ![Website](/images/x.jpg "website")
 
 ---
@@ -37,15 +38,13 @@ This website was created to host all concecutive projects for
 
 ## License
 
-Distributed under the CC BY-NC license.
+GNU General Public License v3.0. See more in Licence.
 
 ---
 
 ## Contact and Credits
 
 Website was made by ?.
+
 Report a bug or request a feature:
 Email: 
-
-
-
