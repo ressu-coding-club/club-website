@@ -31,14 +31,14 @@ This website is a homepage of the Ressu's coding club. Learn about us, check our
 - [ ] Test everything
 - [ ] Host the website somewhere
   - [ ] SEO optimization
-  - [ ] add link to website from the School website
-  - [ ] schem.org, robots.txt
+  - [ ] add link to website from the school website
+  - [ ] schema.org, robots.txt, sitemap.xml
   
 ---
 
 ## License
 
-GNU General Public License v3.0. See more in Licence.
+GNU General Public License v3.0. See more under the licence.
 
 ---
 
