@@ -1,22 +1,24 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: #041C32;
+    color: black;
 }
+
 
 
 .welcome {
-    background-color: black;
+    background-color: #FFFFFF;
+    font-family: fantasy;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 75px;
+    font-size: 75px;
 }
+
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-li {
-    display: inline;
-    margin-left: 150px;
 }
 
 a {
@@ -31,9 +33,16 @@ a {
     width: 250px;
 }
 
-.welcome {
-    margin-left: 400px;
-    margin-right: 400px;
-    margin-top: 75px;
-    font-size: 75px;
+.text{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    font-style: italic;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
