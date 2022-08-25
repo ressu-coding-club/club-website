@@ -45,3 +45,7 @@ p a:hover {
   color: red;
   cursor: pointer;
 }
+
+.projectheading img {
+  margin-left: 0.5rem;
+}
