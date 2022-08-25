@@ -1,29 +1,47 @@
-.Projects {
-    background-color: #395B64;
-    position:relative; 
-    top: 200px;
-    color: white;
-    
+.projectscontainer {
+  background-color: #395b64;
+  /* position: relative; */
+  /* top: 200px; */
+  color: white;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
 }
 
 #title {
-    font-size: 60px;
-    text-align: center;
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: underline;
+  margin: 0.5rem 0;
 }
-
+/* 
 #game2048 {
-    font-size: 30px;
-    float:left; 
-    width: 10px;
-    position:relative; 
-    top: 100px;
+  float: left;
 }
 
-#typinggame{
-    font-size: 30px;
-    float:right; 
-    width: 10px;
-    position:relative; 
-    top: 100px;
+#typinggame {
+  float: right; 
+}*/
+
+.projectheading {
+  font-size: 2rem;
+  margin: 1rem;
+  /* width: 10px; */
+  /* position: relative; */
+  /* top: 100px; */
+  background-color: gray;
 }
 
+.projectheading p {
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+p a:hover {
+  color: red;
+  cursor: pointer;
+}
