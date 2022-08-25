@@ -7,20 +7,23 @@
 }
 
 #title {
-    font-size: 400%;
+    font-size: 60px;
     text-align: center;
 }
 
 #game2048 {
     font-size: 30px;
     float:left; 
-    width:50%;
-    margin-left: 100px;
+    width: 10px;
+    position:relative; 
+    top: 100px;
 }
 
 #typinggame{
     font-size: 30px;
-    float:left; 
-    width:50%;
+    float:right; 
+    width: 10px;
+    position:relative; 
+    top: 100px;
 }
 
