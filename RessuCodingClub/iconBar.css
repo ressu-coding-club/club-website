@@ -1,32 +1,40 @@
+i.icon-bar a {
+  /* float: left; */
+  /* width: 20%; */
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: grey;
+  font-size: 36px;
+}
 
-.icon-bar a {
-	float: left;
-	width: 20%;
-	text-align: center;
-	padding: 12px 0;
-	transition: all 0.3s ease;
-	color: grey;
-	font-size: 36px;
-}
 .icon-bar a:hover {
-	background: #A5C9CA;
-	color: #fff;
+  background: #a5c9ca;
+  color: #fff;
 }
+
 .active {
-	background: #395B64;
-	color: #fff !important;
-} 
+  background: #395b64;
+  color: #fff !important;
+}
 
 i.icon-bar {
-	width: 600px;
-	background: #779ECB;
+  width: 600px;
+  background: #779ecb;
 }
 
-.icon-bar{
-    overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    background-color: #395B64;
-    z-index: 999;
+.icon-bar {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  background-color: #395b64;
+  z-index: 999;
+  font-size: 1.5rem;
+  display: flex;
+  justify-items: space-between;
 }
+
+/* .icon-bar a {
+  justify-items: space-between;
+} */
