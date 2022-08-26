@@ -16,6 +16,7 @@ i.icon-bar a {
 .active {
   background: #395b64;
   color: #fff !important;
+  flex-grow: 1;
 }
 
 i.icon-bar {
@@ -24,7 +25,7 @@ i.icon-bar {
 }
 
 .icon-bar {
-  overflow: hidden;
+  /* overflow: hidden; */
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -32,7 +33,7 @@ i.icon-bar {
   z-index: 999;
   font-size: 1.5rem;
   display: flex;
-  justify-items: space-between;
+  justify-content: center;
 }
 
 /* .icon-bar a {
