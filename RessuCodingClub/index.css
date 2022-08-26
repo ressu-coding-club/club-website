@@ -25,11 +25,10 @@ ul {
   padding: 0;
 }
 
-a {
+.icon-bar a {
   color: white;
   text-decoration: none;
   padding: 1rem;
-  /* margin-left: 50px; */
 }
 
 .icons {
