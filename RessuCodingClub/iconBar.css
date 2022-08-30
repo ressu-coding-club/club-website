@@ -30,7 +30,7 @@ i.icon-bar {
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   background-color: #395b64;
-  z-index: 999;
+  z-index: 998;
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
