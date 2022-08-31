@@ -10,8 +10,9 @@
 #title {
   font-size: 3rem;
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
   margin: 0.5rem 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 /* 
 #game2048 {
