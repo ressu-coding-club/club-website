@@ -31,6 +31,8 @@ i.icon-bar {
   background-color: #395b64;
   z-index: 999;
   font-size: 2rem;
+  border: 1.5px groove #1e2d31;
+  border-style: none groove groove groove;
 }
 
 /* .icon-bar a {
