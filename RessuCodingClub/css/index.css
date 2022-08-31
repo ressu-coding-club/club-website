@@ -11,6 +11,14 @@ body {
   font-family: sans-serif;
 }
 
+h1 {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
 .welcome {
   background-color: #ffffff;
   font-family: fantasy;
@@ -20,11 +28,11 @@ body {
   font-size: 75px;
 }
 
-ul {
+/* ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
+} */
 
 .icon-bar a {
   color: white;
@@ -38,18 +46,32 @@ ul {
     text-decoration: none;
     padding: 1.5rem 3rem;
   }
+  .general-container {
+    border-radius: 15px;
+    background-color: #395b64;
+    color: white;
+    padding: 0.5rem 0;
+    margin: 0 10rem 15rem 10rem;
+  }
+  h1 {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+  }
+  .general-container-header {
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0.5rem 0;
+  }
 }
 
 .icons {
   filter: invert(100%);
   height: 500px;
   width: 250px;
-}
-
-.text {
-  font-size: 4rem;
-  text-align: center;
-  color: white;
 }
 
 .center {
@@ -60,4 +82,12 @@ ul {
 
 #home .center {
   padding-top: 100px;
+}
+
+.general-container {
+  border-radius: 15px;
+  background-color: #395b64;
+  color: white;
+  padding: 0.5rem 0;
+  margin: 0 0 15rem 0;
 }
