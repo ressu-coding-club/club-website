@@ -1,7 +1,8 @@
 # Ressu coding club's website
+
 Welcome to the Ressu coding club's website!
 
-![Logo](/images/x.jpg "logo")
+![Logo](RessuCodingClub/images/ressuCodingClubLogoTransparent.png "logo")
 
 ---
 
@@ -9,7 +10,7 @@ Welcome to the Ressu coding club's website!
 
 This website is a homepage of the Ressu coding club. Learn about us, check our projects and maybe even join us!
 
-![Website](/images/x.jpg "website")
+![Website](RessuCodingClub/images/website.jpg "website")
 
 ---
 
@@ -24,16 +25,16 @@ This website is a homepage of the Ressu coding club. Learn about us, check our p
 
 ## Roadmap
 
-- [ ] Make the website grid 
-  1. [ ] HTML
-  2. [ ] CSS
+- [x] Make the website grid
+  1. [x] HTML
+  2. [x] CSS
 - [ ] Add JS functionality and CSS animation
 - [ ] Test everything
 - [ ] Host the website somewhere
   - [ ] SEO optimization
   - [ ] add link to website from the school website
   - [ ] schema.org, robots.txt, sitemap.xml
-  
+
 ---
 
 ## License
