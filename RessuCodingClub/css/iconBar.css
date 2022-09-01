@@ -7,13 +7,13 @@ i.icon-bar a {
 }
 
 .icon-bar a:hover {
-  background: #a5c9ca;
+  background: #0a3e6f;
   color: #fff;
 }
 
 .active {
-  background: #395b64;
-  color: #fff !important;
+  background: #072a4b;
+  color: #a2caef !important;
   flex-grow: 1;
 }
 
@@ -25,14 +25,11 @@ i.icon-bar {
 .icon-bar {
   /* overflow: hidden; */
   position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+  top: 0px; /* Position the navbar at the top of the page */
   display: flex;
   justify-content: center;
-  background-color: #395b64;
   z-index: 999;
   font-size: 2rem;
-  border: 1.5px groove #1e2d31;
-  border-style: none groove groove groove;
 }
 
 /* .icon-bar a {

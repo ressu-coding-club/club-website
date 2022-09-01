@@ -50,7 +50,8 @@ ul {
 .text {
   font-size: 4rem;
   text-align: center;
-  color: white;
+  color: #a2caef;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .center {
