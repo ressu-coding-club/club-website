@@ -89,7 +89,6 @@ function updateIconBar() {
 
 settings?.addEventListener("mouseover", () => {
   // add spin
-  console.log("hi");
   const gear = document.querySelector(".settings-gear");
   gear?.classList.add("fa-spin");
 });
