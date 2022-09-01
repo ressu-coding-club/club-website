@@ -1,23 +1,5 @@
-.projectscontainer {
-  border-radius: 15px;
-  background-color: #395b64;
-  color: white;
-  padding: 0.5rem 0;
-  margin: 2.5rem 0rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .projectscontainer {
-    border-radius: 15px;
-    background-color: #395b64;
-    color: white;
-    padding: 0.5rem 0;
-    margin: 2.5rem 10rem;
-  }
-}
-
-#title {
-  font-size: 3rem;
+.general-container-header {
+  font-size: 2rem;
   text-align: center;
   text-decoration: underline;
   margin: 0.5rem 0;
@@ -27,9 +9,6 @@
   border-radius: 15px;
   font-size: 2rem;
   margin: 1rem;
-  /* width: 10px; */
-  /* position: relative; */
-  /* top: 100px; */
   background-color: rgb(0, 88, 132);
 }
 
