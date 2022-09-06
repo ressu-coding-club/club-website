@@ -78,3 +78,23 @@
   margin: 0 0.5rem;
   border: 2px solid black;
 }
+
+.language-button {
+  border: 2px solid red;
+  color: red;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.2rem;
+}
+
+.language-button:hover {
+  color: white;
+  background-color: red;
+}
+
+.active-language {
+  border: 2px solid green;
+  color: green;
+}
