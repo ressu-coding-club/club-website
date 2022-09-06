@@ -6,6 +6,7 @@ const home = document.querySelector(".tob-bar-home ");
 const project = document.querySelector(".tob-bar-project");
 const info = document.querySelector(".tob-bar-info");
 const settings = document.querySelector(".tob-bar-setting");
+const user = document.querySelector(".tob-bar-user");
 
 let USERSTATE;
 
@@ -49,6 +50,16 @@ settings?.addEventListener("ontouch", () => {
   updateIconBar();
 });
 
+user?.addEventListener("click", () => {
+  updateState("user");
+  updateIconBar();
+});
+
+user?.addEventListener("ontouch", () => {
+  updateState("user");
+  updateIconBar();
+});
+
 /**
  * @param {string} currentstate
  */
@@ -65,24 +76,35 @@ function updateIconBar() {
       project?.classList.remove("active");
       info?.classList.remove("active");
       settings?.classList.remove("active");
+      user?.classList.remove("active");
       return;
     case "project":
       home?.classList.remove("active");
       project?.classList.add("active");
       info?.classList.remove("active");
       settings?.classList.remove("active");
+      user?.classList.remove("active");
       return;
     case "info":
       home?.classList.remove("active");
       project?.classList.remove("active");
       info?.classList.add("active");
       settings?.classList.remove("active");
+      user?.classList.remove("active");
       return;
     case "settings":
       home?.classList.remove("active");
       project?.classList.remove("active");
       info?.classList.remove("active");
       settings?.classList.add("active");
+      user?.classList.remove("active");
+      return;
+    case "user":
+      home?.classList.remove("active");
+      project?.classList.remove("active");
+      info?.classList.remove("active");
+      settings?.classList.remove("active");
+      user?.classList.add("active");
       return;
   }
 }
