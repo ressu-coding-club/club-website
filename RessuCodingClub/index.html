@@ -13,31 +13,39 @@
 <link rel="stylesheet" href="css/projects.css">
 <link rel="stylesheet" href="css/iconBar.css">
 <link rel="stylesheet" href="css/info.css">
+<link rel="stylesheet" href="css/popUp.css">
 
-<script src="js/script.js" defer></script>
+<script src="js/popUp.js" defer></script>
+<script src="js/cssImporvements.js" defer></script>
 
 <body>
-    <div style="display: flex; justify-content: center;">
+    <div class="center">
         <div class="icon-bar">
-            <a href="#home" class="tob-bar-home active">
-                <i style="display: flex; justify-content: center;" class="fa fa-home"></i>
-            </a>
-            <a href="#project" class="tob-bar-project">
-                <i style="display: flex; justify-content: center;" class="fa fa-folder-open"></i>
-            </a>
-            <a href="#info" class="tob-bar-info">
-                <i style="display: flex; justify-content: center;" class="fa fa-info"></i>
-            </a>
-            <a href="#" class="tob-bar-setting">
-                <i style="display: flex; justify-content: center;" class="fa fa-gear settings-gear"></i>
-            </a>
-            <a href="#" class="tob-bar-user">
-                <i style="display: flex; justify-content: center;" class="fa fa-solid fa-user"></i>
-            </a>
+            <div class="tob-bar-home active icon-bar-child">
+                <a href="#home">
+                    <i class="fa fa-home"></i>
+                </a>
+            </div>
+            <div class="tob-bar-project icon-bar-child">
+                <a href="#project">
+                    <i class="fa fa-folder-open"></i>
+                </a>
+            </div>
+            <div class="tob-bar-info icon-bar-child">
+                <a href="#info">
+                    <i class="fa fa-info"></i>
+                </a>
+            </div>
+            <div data-modal-target="#settings" class="tob-bar-setting icon-bar-child">
+                <i class="fa fa-gear settings-gear"></i>
+            </div>
+            <div data-modal-target="#user" class="tob-bar-user icon-bar-child">
+                <i class="fa fa-solid fa-user"></i>
+            </div>
         </div>
     </div>
     <div class="logo-text" id="home">
-        <img src="images/ressuCodingClubLogoTransparent.png" alt="Logo" class="center" width="150" height="150">
+        <img src="images/ressuCodingClubLogoTransparent.png" alt="Logo" class="center-img" width="150" height="150">
         <h1 class="text">Ressu Coding Club</h1>
     </div>
     <div class="general-container" id="project">
@@ -108,7 +116,56 @@
                 Robin, Elias and Daniel Nikkar
             </p>
         </div>
-        <!-- https://fontawesome.com/search?q=folder&s=solid%2Cbrands-->
+    </div>
+
+
+    <div class="pop-up" id="user">
+        <!-- // settigns modal/poop-up -->
+        <div class="pop-up-header">
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="pop-up-body">
+            <div class="center">
+                <input class="log-in-input" type="text" name="" id="">
+                <span>Username</span>
+            </div>
+            <div class="center">
+                <input class="log-in-input" type="text" name="" id="">
+                <span>Password</span>
+            </div>
+            <div class="center">
+                <input type="checkbox" name="" id="">
+                <span>remember password</span>
+            </div>
+            <div class="center">
+                <button class="log-in-button">Log in</button>
+            </div>
+            <div class="center">
+                New to the website?<a href=""> Register here</a>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up" id="settings">
+        <!-- // settigns modal/poop-up -->
+        <div class="pop-up-header">
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="pop-up-body">
+            <div>
+                Settings
+            </div> <br>
+            change language:
+            <div>
+                <button>
+                    Finnish
+                </button>
+                <button>
+                    English
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
 </body>
 
 </html>

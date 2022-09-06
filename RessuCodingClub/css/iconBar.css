@@ -6,20 +6,15 @@ i.icon-bar a {
   font-size: 36px;
 }
 
-.icon-bar a:hover {
-  background: #a5c9ca;
-  color: #fff;
-}
-
 .active {
   background-color: #141e20;
   transition: 0.75s ease-out;
 }
 
-i.icon-bar {
+/* i.icon-bar {
   width: 600px;
   background-color: #779ecb;
-}
+} */
 
 .icon-bar {
   /* overflow: hidden; */
@@ -35,6 +30,13 @@ i.icon-bar {
   /* margin-bottom: 5rem; */
 }
 
-.icon-bar a {
+.icon-bar-child {
   transition: 0.5s ease-out;
+  color: white;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+}
+
+.icon-bar-child:hover {
+  background-color: #8aa0a1;
 }

@@ -1,0 +1,80 @@
+.pop-up {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.pop-up.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.pop-up-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+  /* border-bottom: 1px solid black; */
+}
+
+.pop-up-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.pop-up-body {
+  /* display: flex;
+  flex-direction: column; */
+  padding: 0.5rem 1rem;
+}
+
+.pop-up-body div {
+  margin: 0.5rem 0;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.log-in-button {
+  border: 2px solid blue;
+  color: blue;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.log-in-button:hover {
+  color: white;
+  background-color: blue;
+}
+
+.log-in-input {
+  margin: 0 0.5rem;
+  border: 2px solid black;
+}
