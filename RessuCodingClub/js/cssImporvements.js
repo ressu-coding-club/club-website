@@ -1,6 +1,6 @@
 // @ts-check
 // ts-check for finding some stupid bugs that js allows (like having number and string calculations)
-// Be aware that it also shows some ONLY typescript bugs! (those can be ignored)
+// Be aware that it also shows those ONLY typescript bugs! (those can be ignored)
 
 const home = document.querySelector(".tob-bar-home ");
 const project = document.querySelector(".tob-bar-project");

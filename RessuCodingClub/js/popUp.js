@@ -1,4 +1,6 @@
 // @ts-check
+// ts-check for finding some stupid bugs that js allows (like having number and string calculations)
+// Be aware that it also shows those ONLY typescript bugs! (those can be ignored)
 
 const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-close-button]");
@@ -7,7 +9,6 @@ const FinnishLanguage = document.querySelector("#finnish-button");
 const EnglishLanguage = document.querySelector("#english-button");
 
 EnglishLanguage?.addEventListener("click", () => {
-  console.log("hi");
   EnglishLanguage.classList.add("active-language");
   FinnishLanguage?.classList.remove("active-language");
 });
@@ -38,14 +39,14 @@ openModalButtons.forEach((button) => {
   });
 });
 
-overlay.addEventListener("click", () => {
+overlay?.addEventListener("click", () => {
   const modals = document.querySelectorAll(".pop-up.active");
   modals.forEach((modal) => {
     closeModal(modal);
   });
 });
 
-overlay.addEventListener("ontouch", () => {
+overlay?.addEventListener("ontouch", () => {
   const modals = document.querySelectorAll(".pop-up.active");
   modals.forEach((modal) => {
     closeModal(modal);
@@ -66,11 +67,11 @@ closeModalButtons.forEach((button) => {
 function openModal(modal) {
   if (modal == null) return;
   modal.classList.add("active");
-  overlay.classList.add("active");
+  overlay?.classList.add("active");
 }
 
 function closeModal(modal) {
   if (modal == null) return;
   modal.classList.remove("active");
-  overlay.classList.remove("active");
+  overlay?.classList.remove("active");
 }
