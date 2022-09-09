@@ -36,8 +36,19 @@ FinnishLanguage?.addEventListener("ontouch", (e) => {
   EnglishLanguage?.classList.remove("active-language");
 });
 
+let user;
+
 login?.addEventListener("click", (e) => {
   domReset(e);
+
+  user = new User(
+    username?.value,
+    password?.value,
+    rememberPassword?.checked,
+    "keyboard"
+  );
+
+  console.log(user);
   // @ts-ignore
   console.log("password:", password?.value);
   // @ts-ignore
@@ -48,6 +59,14 @@ login?.addEventListener("click", (e) => {
 
 login?.addEventListener("ontouch", (e) => {
   domReset(e);
+  user = new User(
+    username?.value,
+    password?.value,
+    rememberPassword?.checked,
+    "touchscreen"
+  );
+
+  console.log(user);
   // @ts-ignore
   console.log("password:", password?.value);
   // @ts-ignore
