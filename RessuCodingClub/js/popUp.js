@@ -38,26 +38,34 @@ FinnishLanguage?.addEventListener("ontouch", (e) => {
 
 login?.addEventListener("click", (e) => {
   domReset(e);
-  console.log("password:", password.value);
-  console.log("username:", username.value);
-  console.log("remember password:", rememberPassword.checked);
+  // @ts-ignore
+  console.log("password:", password?.value);
+  // @ts-ignore
+  console.log("username:", username?.value);
+  // @ts-ignore
+  console.log("remember password:", rememberPassword?.checked);
 });
 
 login?.addEventListener("ontouch", (e) => {
   domReset(e);
-  console.log("password:", password.value);
-  console.log("username:", username.value);
-  console.log("remember password:", rememberPassword.checked);
+  // @ts-ignore
+  console.log("password:", password?.value);
+  // @ts-ignore
+  console.log("username:", username?.value);
+  // @ts-ignore
+  console.log("remember password:", rememberPassword?.checked);
 });
 
 openModalButtons.forEach((button) => {
   button.addEventListener("click", (e) => {
     domReset(e);
+    // @ts-ignore
     const modal = document.querySelector(button.dataset.modalTarget);
     openModal(modal);
   });
   button.addEventListener("ontouch", (e) => {
     domReset(e);
+    // @ts-ignore
     const modal = document.querySelector(button.dataset.modalTarget);
     openModal(modal);
   });
