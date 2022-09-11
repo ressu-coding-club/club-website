@@ -49,12 +49,6 @@ login?.addEventListener("click", (e) => {
   );
 
   console.log(user);
-  // @ts-ignore
-  console.log("password:", password?.value);
-  // @ts-ignore
-  console.log("username:", username?.value);
-  // @ts-ignore
-  console.log("remember password:", rememberPassword?.checked);
 });
 
 login?.addEventListener("ontouch", (e) => {
@@ -67,12 +61,6 @@ login?.addEventListener("ontouch", (e) => {
   );
 
   console.log(user);
-  // @ts-ignore
-  console.log("password:", password?.value);
-  // @ts-ignore
-  console.log("username:", username?.value);
-  // @ts-ignore
-  console.log("remember password:", rememberPassword?.checked);
 });
 
 openModalButtons.forEach((button) => {

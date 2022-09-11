@@ -6,7 +6,7 @@
 // const getPassword = async () => {
 //   try {
 //     const password = await Promise.resolve(
-//       fetch("https://") // 34636
+//       fetch("https://")
 //     ).then((res) => {
 //       return;
 //     });
@@ -35,7 +35,8 @@ class User {
 // PUT
 // const putUser = async () => {
 //   try {
-//     const response = await Promise.resolve(fetch(`https://${user.username}`, {})).then(
+//     const response = await Promise.resolve(fetch(`https://${user.username}`, {
+// })).then(
 //       (res) => {
 //         return;
 //       }
