@@ -42,8 +42,11 @@ login?.addEventListener("click", (e) => {
   domReset(e);
 
   user = new User(
+    // @ts-ignore
     username?.value,
+    // @ts-ignore
     password?.value,
+    // @ts-ignore
     rememberPassword?.checked,
     "keyboard"
   );
@@ -54,8 +57,11 @@ login?.addEventListener("click", (e) => {
 login?.addEventListener("ontouch", (e) => {
   domReset(e);
   user = new User(
+    // @ts-ignore
     username?.value,
+    // @ts-ignore
     password?.value,
+    // @ts-ignore
     rememberPassword?.checked,
     "touchscreen"
   );
