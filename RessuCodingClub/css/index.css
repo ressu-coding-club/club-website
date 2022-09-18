@@ -89,3 +89,21 @@ h1 {
 .fa {
   color: white;
 }
+
+.skip-to-main {
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  translate: 0 -100%;
+  transition: transalte 150ms ease-in-out;
+  z-index: 20;
+  background-color: black;
+  color: #ffffff;
+}
+
+.skip-to-main:focus {
+  translate: 0;
+}

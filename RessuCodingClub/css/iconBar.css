@@ -23,7 +23,7 @@ i.icon-bar a {
   display: flex;
   justify-content: center;
   background-color: #395b64;
-  z-index: 999;
+  z-index: 10;
   font-size: 2rem;
   border: 1.5px groove #1e2d31;
   border-style: none groove groove groove;
