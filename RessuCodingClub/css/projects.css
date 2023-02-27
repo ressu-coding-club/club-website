@@ -1,46 +1,78 @@
-.general-container-header {
-  font-size: 3rem;
-  text-align: center;
-  text-decoration: underline;
-  margin: 0.5rem 0;
+.project-container {
+  display: flex;
+  justify-content: center;
+  height: 200vh;
+  align-items: center;
 }
 
-.project {
-  border-radius: 15px;
-  font-size: 2rem;
+.project-card-container {
+  background-color: var(--text-main-color);
+  padding: 1rem;
   margin: 1rem;
-  background-color: rgb(0, 88, 132);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.project p {
-  font-size: 1rem;
-  margin: 0 0.5rem;
+.project-content-container {
+  margin: 5% 10%;
+  display: flex;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+}
+
+.card-header .title {
+  color: var(--subtitle-color);
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+}
+
+.project-description {
+  color: var(--background-color);
   padding: 0.5rem;
 }
 
-a .link {
-  text-decoration: underline;
-}
-
-a .link:hover {
-  color: red;
-  cursor: pointer;
-}
-
-a b {
-  color: black;
-}
-
-.project img {
-  margin: 0.15rem 0 0 0.6rem;
-}
-
-.projectHead {
+.project-button {
+  background-color: var(--navbar-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--subtitle-color);
+  border-radius: 1rem;
+  padding: 0.5rem;
   display: flex;
-  align-items: center;
-  padding-top: 0.5rem;
+  justify-content: center;
+  text-transform: uppercase;
+  transform: scale(1);
+  transition: ease-in-out;
 }
 
-.projectHead span {
-  margin-left: 0.75rem;
+.project-button:hover {
+  transform: scale(1.02);
+}
+
+.projects-header {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.projects-header > .title {
+  color: var(--subtitle-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.projects-header > .sub-title {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .project-content-container {
+    flex-direction: column-reverse;
+  }
 }

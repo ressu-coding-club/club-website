@@ -2,127 +2,168 @@
 <html lang="en-US">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta name="author" content="Daniel Nikkar, Elias Simojoki, Robin Runne">
+<meta name="author" content="Daniel Nikkar, Elias Simojoki">
 <meta name="description" content="This website is a homepage of the Ressu coding club.
-    Learn about us, check our projects and maybe even join us!">
+    Learn about us, check out our projects and maybe even join us!">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/x-icon" href="images/ressuCodingClubLogoTransparent.png">
 <title>Ressu Coding Club</title>
 
 <link rel="stylesheet" href="css/index.css">
 <link rel="stylesheet" href="css/projects.css">
-<link rel="stylesheet" href="css/iconBar.css">
-<link rel="stylesheet" href="css/info.css">
+<link rel="stylesheet" href="css/navbar.css">
 <link rel="stylesheet" href="css/popUp.css">
-
+<link rel="stylesheet" href="css/home.css">
 <script src="js/requests.js" defer></script>
 <script src="js/popUp.js" defer></script>
-<script src="js/cssImporvements.js" defer></script>
+<script src="js/index.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
 <body>
     <header>
+        <!-- For screen readers, accessibility -->
         <a class="skip-to-main" href="#main-content">Skip to main content</a>
-        <div class="center">
-            <div class="icon-bar">
-                <a class="tob-bar-home active icon-bar-child" href="#home">
-                    <i class="fa fa-home"></i>
-                </a>
-                <a class="tob-bar-project icon-bar-child" href="#project">
-                    <i class="fa fa-folder-open"></i>
-                </a>
-                <a class="tob-bar-info icon-bar-child" href="#info">
-                    <i class="fa fa-info"></i>
-                </a>
-                <div data-modal-target="#settings" class="tob-bar-setting icon-bar-child">
-                    <i class="fa fa-gear settings-gear"></i>
-                </div>
-                <div data-modal-target="#user" class="tob-bar-user icon-bar-child">
-                    <i class="fa fa-solid fa-user"></i>
-                </div>
-            </div>
+        <div class="navbar-container">
+            <a class="element" href="#home">Home</a>
+            <a class="element" href="#projects">Projects</a>
+            <button class="element">Settings</button>
         </div>
     </header>
     <main id="main-content">
-        <div class="logo-text" id="home">
-            <img src="images/ressuCodingClubLogoTransparent.png" alt="Logo" class="center-img" width="150" height="150">
-            <h1 class="text">Ressu Coding Club</h1>
-        </div>
-        <div class="general-container" id="project">
-            <div class="general-container-header">
-                Projects
-            </div>
-            <div class="project">
-                <div class="projectHead">
-                    <img src="images/Teacher2048.png" width="50" height="50" alt="">
-                    <span>Sample 2048 Game</span>
+        <div class="home-container" id="home">
+            <div class="home-content-container">
+                <div>
+                    <h1>Ressu Coding Club</h1>
+                    <p>Ressu Coding Club is an open-minded community where projects are done together, coding is
+                        discussed, new
+                        skills are acquired, and much much more – we are open to suggestions! We have weekly meetings on
+                        Thursdays
+                        and
+                        sometimes
+                        additional coding sessions, to boot. Both experienced and novice coders are welcome! We do not
+                        teach
+                        coding, but we can certainly give tips and help new coders! Additionally, we are bilingual!</p>
                 </div>
-                <p>Have you played the famous 2048 game? Or the fan favourite OispaKaljaa?
-                    In this game, instead of numbers or beer cans, you connect
-                    teachers heads in an attempt to reach the ultimate goal:
-                    ARI H! <a href=""><b class="link"> CLICK HERE</b></a> to play!
-                </p>
-            </div>
-            <div class="project">
-                <div class="projectHead">
-                    <img src="images/snoopy_laptop.png" width="50" height="50" alt="">
-                    <span>Typing game</span>
+                <div class="image-container">
+                    <img src="images/ressuCodingClubLogoTransparent.png" alt="Logo" class="center-img" width="150"
+                        height="150">
                 </div>
-                <p>Ever wondered who's the fasterst typist in Ressu?
-                    In this typing game you type Ressu-related words as fast
-                    as you can. You can compare your speed to others in a
-                    weekly leaderboard! <a href=""><b class="link"> CLICK HERE</b></a> to play!
-                </p>
-            </div>
-            <div class="project">
-                <div class="projectHead">
-                    <img src="images/snoopyYG.png" width="50" height="50" alt="logo example">
-                    <span>Ressu Chrome extension</span>
-                </div>
-                <p>Picture a world where you could have all the useful features you need for school and studying in one
-                    place. Wouldn't that be awesome? Well, you don't have to imagine anything because with this
-                    compeletly
-                    <b>FREE</b> extension the imagination becomes a reality! <a href=""><b class="link">CLICK
-                            HERE</b></a>
-                    to download the extension!
-                </p>
-            </div>
-            <div class="project">
-                <div class="projectHead">
-                    <img src="images/faviconNhl.ico" width="50" height="50" alt="logo example">
-                    <span>NHL Wordle</span>
-                </div>
-                <p>Do you think that basic wordle is boring and do do like ice hockey? If the answer to both of those
-                    questions was yes then you will <b>LOVE</b> this wordle spin-off. Practice by <a href=""><b
-                            class="link">PLAYING</b></a> training mode or challlenge yourself in a daily challenge!</p>
-            </div>
-            <div class="project">
-                <div class="projectHead">
-                    <img src="images/fish.ico" width="50" height="50" alt="logo example">
-                    <span>Fishgame</span>
-                </div>
-                <p>Norssis have received better grades in the matriculation examination! Soldier, you have to avenge
-                    Ressu
-                    and its students by wiping out each and every Norssi! Press <a href=""><b class="link">HERE</b></a>
-                    to
-                    play!</p>
             </div>
         </div>
-        <div class="general-container" id="info">
-            <div class="general-container-header">
-                Credits
-            </div>
-            <div class="project">
-                <p class="credits-desciption">
-                    This website was made by:<br>
-                    Robin, Elias and Daniel Nikkar
-                </p>
+        <div class="project-container" id="projects">
+            <div class="project-content-container">
+
+                <div>
+                    <div class="project-card-container">
+                        <div class="card-header">
+                            <div class="image">
+                                <img src="images/snoopy_laptop.png" width="50" height="50" alt="">
+                            </div>
+                            <div class="title">
+                                Ressu 2048 Game
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Have you played the famous 2048 game? Or the fan favourite OispaKaljaa?
+                            In this game, instead of numbers or beer cans, you connect
+                            teachers heads in an attempt to reach the ultimate goal:
+                            ARI H!
+                        </p>
+                        <button class="project-button">
+                            Go to website
+                        </button>
+                    </div>
+                    <div class="project-card-container">
+                        <div class="card-header">
+                            <div class="image"><img src="images/Teacher2048.png" width="50" height="50" alt="">
+                            </div>
+                            <div class="title">
+                                Ressu typing game
+                            </div>
+                        </div>
+                        <p class="project-description">Ever wondered who's the fastest typist in Ressu?
+                            In this typing game you type Ressu-related words as fast
+                            as you can. You can compare your speed to others in a
+                            weekly leaderboard!
+                        </p>
+                        <button class="project-button">
+                            Go to website
+                        </button>
+                    </div>
+                    <div class="project-card-container">
+                        <div class="card-header">
+                            <div class="image">IMG</div>
+                            <div class="title">
+                                Boiler suit website
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Have you ever wondered what are the boiler suits university students in Finland use. And
+                            what the color of the boiler suit means. If so, this website is made for you: there you
+                            would be able to find almost all possible information about boiler suits!
+                        </p>
+                        <button class="project-button">
+                            Go to website
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div class="projects-header">
+                        <div class="title">Projects</div>
+                        <div class="sub-title">Learn more about our projects!</div>
+                    </div>
+                    <div class="project-card-container">
+                        <div class="card-header">
+                            <div class="image">
+                                <img src="images/faviconNhl.ico" width="50" height="50" alt="logo example">
+                            </div>
+                            <div class="title">
+                                NHL Wordle
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Do you think that basic Wordle is boring and do do like ice hockey? If the answer to
+                            both of those questions was yes then you will definitely fall in love with this Wordle
+                            spin-off. Practice with a
+                            training mode or challenge yourself with a daily challenge!
+                        </p>
+                        <button class="project-button">
+                            Go to website
+                        </button>
+                    </div>
+                    <div class="project-card-container">
+                        <div class="card-header">
+                            <div class="image">
+                                <img src="images/fish.ico" width="50" height="50" alt="logo example">
+                            </div>
+                            <div class="title">
+                                Fishgame
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Norssis have received better grades in the matriculation examination! Soldier, you
+                            have to avenge Ressu and its students by wiping out each and every Norssi!
+                        </p>
+                        <button class="project-button">
+                            Go to website
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-
-
-    <div class="pop-up" id="user">
-        <!-- // settigns modal/poop-up -->
+    <footer class="footer-container">
+        <div class="made-by">
+            This website was made by Daniel Nikkar
+        </div>
+        <div class="social-info">
+            Discord icon?
+        </div>
+    </footer>
+    <!-- <div class="pop-up" id="user">
         <div class="pop-up-header">
             <button data-close-button class="close-button">&times;</button>
         </div>
@@ -147,8 +188,8 @@
             </div>
         </div>
     </div>
+    -->
     <div class="pop-up" id="settings">
-        <!-- // settigns modal/poop-up -->
         <div class="pop-up-header">
             <button data-close-button class="close-button">&times;</button>
         </div>
