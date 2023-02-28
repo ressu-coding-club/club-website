@@ -1,7 +1,6 @@
 .project-container {
   display: flex;
   justify-content: center;
-  height: 200vh;
   align-items: center;
 }
 
@@ -25,7 +24,7 @@
 }
 
 .card-header .title {
-  color: var(--subtitle-color);
+  color: var(--navbar-color);
   font-weight: 700;
   font-size: 2rem;
   text-transform: uppercase;
@@ -33,12 +32,12 @@
 }
 
 .project-description {
-  color: var(--background-color);
+  color: var(--navbar-color);
   padding: 0.5rem;
 }
 
 .project-button {
-  background-color: var(--navbar-color);
+  background-color: var(--background-color);
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--subtitle-color);
@@ -61,7 +60,6 @@
 }
 
 .projects-header > .title {
-  color: var(--subtitle-color);
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
