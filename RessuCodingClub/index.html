@@ -16,7 +16,6 @@
 <link rel="stylesheet" href="css/home.css">
 <script src="js/requests.js" defer></script>
 <script src="js/popUp.js" defer></script>
-<script src="js/index.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -29,7 +28,7 @@
         <div class="navbar-container">
             <a class="element" href="#home">Home</a>
             <a class="element" href="#projects">Projects</a>
-            <button class="element">Settings</button>
+            <button data-modal-target="#settings" class="element">Settings</button>
         </div>
     </header>
     <main id="main-content">
@@ -48,8 +47,7 @@
                         coding, but we can certainly give tips and help new coders! Additionally, we are bilingual!</p>
                 </div>
                 <div class="image-container">
-                    <img src="images/ressuCodingClubLogoTransparent.png" alt="Logo" class="center-img" width="150"
-                        height="150">
+                    <img src="images/logo.png" alt="Logo" class="center-img" width="150" height="150">
                 </div>
             </div>
         </div>
@@ -59,7 +57,7 @@
                     <div class="project-card-container">
                         <div class="card-header">
                             <div class="image">
-                                <img src="images/snoopy_laptop.png" width="50" height="50" alt="">
+                                <img src="images/2048game.png" width="50" height="50" alt="">
                             </div>
                             <div class="title">
                                 Ressu 2048 Game
@@ -71,10 +69,53 @@
                             teachers heads in an attempt to reach the ultimate goal:
                             ARI H!
                         </p>
-                        <button class="project-button" onclick="window.location.href='http://www.youtube.com';"
+                        <button class="project-button" onclick="window.location.href='http://www.google.com';"
                             target="_blank">
                             Go to website
                         </button>
+                    </div>
+                    <div class="project-card-container">
+                        <div class="card-header">
+                            <div class="image">
+                                <img src="images/fishgame.ico" width="50" height="50" alt="logo example">
+                            </div>
+                            <div class="title">
+                                Fishgame
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Norssis have received better grades in the matriculation examination! Soldier, you
+                            have to avenge Ressu and its students by wiping out each and every Norssi!
+                        </p>
+                        <button class="project-button"
+                            onclick="window.location.href='https://norssifishgame.netlify.app/';" target="_blank">
+                            Go to website
+                        </button>
+                    </div>
+                    <div class="project-card-container">
+                        <div class="card-header">
+                            <div class="image">
+                                <img src="images/boilerSuitWebsite.png" width="50" height="50" alt="">
+                            </div>
+                            <div class="title">
+                                Boiler suit website
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Have you ever wondered what are the boiler suits university students in Finland use. And
+                            what the color of the boiler suit means. If so, this website is made for you: there you
+                            would be able to find almost all possible information about boiler suits!
+                        </p>
+                        <button class="project-button"
+                            onclick="window.location.href='https://boiler-suit.netlify.app/';" target="_blank">
+                            Go to website
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div class="projects-header">
+                        <div class="title">Projects</div>
+                        <div class="sub-title">Learn more about our projects!</div>
                     </div>
                     <div class=" project-card-container">
                         <div class="card-header">
@@ -89,38 +130,15 @@
                             as you can. You can compare your speed to others in a
                             weekly leaderboard!
                         </p>
-                        <button class="project-button" onclick="window.location.href='http://www.youtube.com';"
+                        <button class="project-button" onclick="window.location.href='http://www.google.com';"
                             target="_blank">
                             Go to website
                         </button>
-                    </div>
-                    <div class="project-card-container">
-                        <div class="card-header">
-                            <div class="image">IMG</div>
-                            <div class="title">
-                                Boiler suit website
-                            </div>
-                        </div>
-                        <p class="project-description">
-                            Have you ever wondered what are the boiler suits university students in Finland use. And
-                            what the color of the boiler suit means. If so, this website is made for you: there you
-                            would be able to find almost all possible information about boiler suits!
-                        </p>
-                        <button class="project-button" onclick="window.location.href='http://www.youtube.com';"
-                            target="_blank">
-                            Go to website
-                        </button>
-                    </div>
-                </div>
-                <div>
-                    <div class="projects-header">
-                        <div class="title">Projects</div>
-                        <div class="sub-title">Learn more about our projects!</div>
                     </div>
                     <div class="project-card-container">
                         <div class="card-header">
                             <div class="image">
-                                <img src="images/faviconNhl.ico" width="50" height="50" alt="logo example">
+                                <img src="images/NHLWordle.ico" width="50" height="50" alt="logo example">
                             </div>
                             <div class="title">
                                 NHL Wordle
@@ -132,25 +150,7 @@
                             spin-off. Practice with a
                             training mode or challenge yourself with a daily challenge!
                         </p>
-                        <button class="project-button" onclick="window.location.href='http://www.youtube.com';"
-                            target="_blank">
-                            Go to website
-                        </button>
-                    </div>
-                    <div class="project-card-container">
-                        <div class="card-header">
-                            <div class="image">
-                                <img src="images/fish.ico" width="50" height="50" alt="logo example">
-                            </div>
-                            <div class="title">
-                                Fishgame
-                            </div>
-                        </div>
-                        <p class="project-description">
-                            Norssis have received better grades in the matriculation examination! Soldier, you
-                            have to avenge Ressu and its students by wiping out each and every Norssi!
-                        </p>
-                        <button class="project-button" onclick="window.location.href='http://www.youtube.com';"
+                        <button class="project-button" onclick="window.location.href='https://nhlwordle.netlify.app/';"
                             target="_blank">
                             Go to website
                         </button>
@@ -194,10 +194,13 @@
     </div>
     -->
     <div class="pop-up" id="settings">
-        <div class="pop-up-header">
+        <div class="pop-up-header" style="background-color: rgb(255, 4, 4);">
             <button data-close-button class="close-button">&times;</button>
         </div>
-        <div class="pop-up-body">
+        <div style="color: black;">
+            Currently not working
+        </div>
+        <!-- <div class="pop-up-body">  
             <div style="text-decoration: underline;" class="center">
                 Settings
             </div> <br>
@@ -212,7 +215,7 @@
                     English
                 </button>
             </div>
-        </div>
+        </div> -->
     </div>
     <div id="overlay"></div>
 </body>
