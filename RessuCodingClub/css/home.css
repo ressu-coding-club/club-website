@@ -25,7 +25,7 @@
   text-align: center;
   font-size: 3rem;
   text-transform: uppercase;
-  color: white;
+  color: var(--text-main-color);
   margin: 0 1rem;
 }
 

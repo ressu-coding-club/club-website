@@ -11,7 +11,7 @@
   --background-color: purple;
   --text-main-color: white;
   /* --subtitle-color: rgb(195, 49, 211); */
-  --navbar-color: rgb(3, 3, 0);
+  --navbar-color: rgb(0, 0, 0);
   font-weight: 500;
   font-size: 1rem;
 
@@ -61,8 +61,8 @@ body {
   translate: 0 -100%;
   transition: translate 150ms ease-in-out;
   z-index: 20;
-  background-color: black;
-  color: #ffffff;
+  background-color: var(--navbar-color);
+  color: var(--text-main-color);
 }
 
 .skip-to-main:focus {
