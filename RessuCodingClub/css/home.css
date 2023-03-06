@@ -26,6 +26,7 @@
   font-size: 3rem;
   text-transform: uppercase;
   color: white;
+  margin: 1rem;
 }
 
 @media (max-width: 700px) {
