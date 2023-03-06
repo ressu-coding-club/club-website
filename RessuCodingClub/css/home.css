@@ -21,14 +21,14 @@
   margin-top: 10%;
 }
 
-.home-container div > h1 {
+.home-container div > .frontpage-text {
   text-align: center;
   font-size: 3rem;
   text-transform: uppercase;
 }
 
 @media (max-width: 700px) {
-  h1 {
+  .frontpage-text {
     font-size: 1.5rem;
   }
 

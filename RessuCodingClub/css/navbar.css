@@ -20,3 +20,8 @@
 .navbar-container .element:hover {
   transform: scale(1.02);
 }
+
+a > img {
+  width: 2rem;
+  
+}
