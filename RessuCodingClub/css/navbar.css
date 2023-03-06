@@ -5,7 +5,7 @@
   background-color: var(--background-color);
   color: var(--text-main-color);
   z-index: 1;
-  font-size: 2.5rem;
+  font-size: 2rem;
   width: 100%;
   padding: 1rem;
   text-transform: uppercase;
@@ -24,5 +24,11 @@
 
 a > img {
   width: 2rem;
-  
+}
+
+@media (max-width: 600px) {
+  .navbar-container {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
 }

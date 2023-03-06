@@ -21,7 +21,7 @@
   margin-top: 10%;
 }
 
-.home-container div > .frontpage-text {
+.home-content-container > .title {
   text-align: center;
   font-size: 3rem;
   text-transform: uppercase;
@@ -29,17 +29,13 @@
 }
 
 @media (max-width: 700px) {
-  .frontpage-text {
+  .home-content-container > .title {
     font-size: 1.5rem;
   }
 
   .home-container div > p {
     color: var(--subtitle-color);
     font-size: 0.75rem;
-  }
-
-  .navbar-container {
-    font-size: 1.5rem;
   }
 
   .home-container .background {
