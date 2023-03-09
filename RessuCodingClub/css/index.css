@@ -8,8 +8,8 @@
   font-family: "Inter", sans-serif;
 
   color-scheme: light dark;
-  --background-color: purple;
-  --text-main-color: white;
+  --background-color: rgb(128, 0, 128);
+  --text-main-color: rgb(255, 255, 255);
   /* --subtitle-color: rgb(195, 49, 211); */
   --navbar-color: rgb(3, 3, 0);
   font-weight: 500;

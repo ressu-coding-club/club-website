@@ -15,7 +15,6 @@
 .navbar-container .element {
   transform: scale(1);
   transition: ease-in-out;
-  color: white;
 }
 
 .navbar-container .element:hover {

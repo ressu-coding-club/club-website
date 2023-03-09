@@ -25,7 +25,7 @@
   text-align: center;
   font-size: 3rem;
   text-transform: uppercase;
-  color: white;
+  color: var(--text-main-color);
 }
 
 @media (max-width: 700px) {
@@ -34,7 +34,7 @@
   }
 
   .home-container div > p {
-    color: var(--subtitle-color);
+    color: var(--text-main-color);
     font-size: 0.75rem;
   }
 
