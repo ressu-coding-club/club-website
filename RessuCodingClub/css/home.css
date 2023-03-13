@@ -21,25 +21,25 @@
   margin-top: 10%;
 }
 
-.home-container div > .frontpage-text {
+.home-content-container > .title {
   text-align: center;
   font-size: 3rem;
   text-transform: uppercase;
   color: var(--text-main-color);
+<<<<<<< HEAD
+=======
+  margin: 0 1rem;
+>>>>>>> 6fb02dd7ad468bf7502277471389997c8400cacb
 }
 
 @media (max-width: 700px) {
-  .frontpage-text {
+  .home-content-container > .title {
     font-size: 1.5rem;
   }
 
   .home-container div > p {
     color: var(--text-main-color);
     font-size: 0.75rem;
-  }
-
-  .navbar-container {
-    font-size: 1.5rem;
   }
 
   .home-container .background {
