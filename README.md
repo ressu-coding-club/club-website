@@ -25,12 +25,7 @@ This website is a homepage of the Ressu coding club. Learn about us, check our p
 
 ## Roadmap
 
-- [x] Make the website grid
-  1. [x] HTML
-  2. [x] CSS
-- [ ] Add JS functionality and CSS animation
-- [ ] Test everything
-- [ ] Host the website somewhere
+- [X] Host the website somewhere
   - [ ] SEO optimization
   - [ ] add link to website from the school website
   - [ ] schema.org, robots.txt, sitemap.xml
